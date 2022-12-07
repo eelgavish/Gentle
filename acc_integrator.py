@@ -5,6 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import rotmat as rm
 from filtering import butter_filter
+import csv
 
 #data = pd.read_csv("IMUdata/DrMeryskin1667249917.csv")
 data = pd.read_csv("IMUdata/DrVanardosanastomosis1667251523.csv")
@@ -38,8 +39,6 @@ p2z = np.empty([length])
 v2x = np.empty([length])
 v2y = np.empty([length])
 v2z = np.empty([length])
-
-import csv
 
 # open the file in the write mode
 f = open('IMUdata/Processed_DrVanardosanastomosis1667251523.csv', 'w', newline='')
